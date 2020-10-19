@@ -18,7 +18,7 @@ __version__ = "1.3"
 
 def ej1():
     # Ejercicios de práctica con números
-    print('Nuestra primera calculadora')
+    print("Nuestra primera calculadora")
     '''
     Realice un calculadora, se ingresará por línea de comando dos
     números reales y se deberá calcular todas las operaciones entre ellos:
@@ -34,6 +34,25 @@ def ej1():
       ej: La suma entre 4.2 y 6.5 es 10.7
 
     '''
+    numero_1 = 10.5
+    numero_2 = 25
+    
+    suma = numero_1 + numero_2
+    print("La suma entre", numero_1, "y", numero_2, "es:", suma)
+    
+    resta = numero_1 - numero_2
+    print("la resta entre", numero_1, "y", numero_2, "es:", resta)
+
+    multiplicacion = numero_1 * numero_2
+    print("la multiplicacion entre", numero_1, "y", numero_2, "es:", multiplicacion)
+
+    division = numero_1 / numero_2
+    print("la division entre", numero_1, "y", numero_2, "es:", division)
+
+    exponete = numero_2 ** 2
+    print("el cuadrado de", numero_2, "es:", exponete)
+
+
 
 
 def ej2():
@@ -55,6 +74,21 @@ def ej2():
       entienda de que se está hablando.
 
     '''
+    print('Ingrese su Nombre:')
+    Nombre = str(input())
+    print('Ingrese su Apellido:')
+    Apellido = str(input())
+    print('Ingrese su DNI:')
+    DNI = str(input())
+    print('Ingrese su Edad:')
+    Edad = str(input())
+    print('Ingrese su Altura:')
+    Altura = str(input())
+
+    print("Su nombre es:", Nombre, Apellido, ",", "Su DNI:", DNI)
+    print("Su nombre es:", Nombre, Apellido, ",", "Edad:", Edad, ",", "Altura:", Altura)
+
+
 
 
 def ej3():
@@ -80,7 +114,7 @@ def ej3():
 
     direccion_completa = 'Monroe 2716'
     calle, altura = direccion_completa.split(' ')
-
+    
     Les dejo por su cuenta a que busquen un poco más acerca de este método
     que seguramente utilizarán mucho de acá en adelante.
     Les dejamos un link con algunos ejemplos más:
@@ -89,6 +123,27 @@ def ej3():
     Cualquier duda con el método split pueden consultarla por el campus
 
     '''
+    
+    print('Ingrese su Nombre de su Padre:')
+    Nombre_completo_padre = str(input())
+
+    print('Ingrese su Nombre de su Madre:')
+    Nombre_completo_madre = str(input())
+
+    print('Ingrese su Nombre del hijo:')
+    Nombre_hijo = str(input())
+    
+    nombrep, apellidop = Nombre_completo_padre.split(",")
+
+    Nombre_completo_padre = nombrep + apellidop
+    
+    nombrem,apellidom = Nombre_completo_madre.split(",")
+
+    print(Nombre_hijo, apellidop, apellidom)
+
+
+
+
 
 
 def ej4():
@@ -115,12 +170,12 @@ def ej4():
 
     direccion_completa = 'Monroe 2716'
     calle, altura = direccion_completa.split(' ')
-
+    
     Les dejo por su cuenta a que busquen un poco más acerca
     de este método que seguramente utilizarán mucho de acá en adelante.
     Les dejamos un link con algunos ejemplos más:
     https://www.pythonforbeginners.com/dictionary/python-split
-
+  
     Cualquier duda con el método split pueden consultarla por el campus
     '''
 
@@ -153,8 +208,8 @@ def ej5():
 
 if __name__ == '__main__':
     print("Ejercicios de práctica")
-    ej1()
+    # ej1()
     # ej2()
-    # ej3()
+    ej3()
     # ej4()
     # ej5()
