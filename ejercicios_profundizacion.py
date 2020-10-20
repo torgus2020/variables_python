@@ -123,27 +123,36 @@ def ej3():
     Cualquier duda con el método split pueden consultarla por el campus
 
     '''
-    
+    Nombre_padre = "Armando Torres"
+    Nombre_madre = "Cristina Serial"
+    Nombre_hijo = "Gustavo"
+
+    separador = " "
+    Nom_padre,ape_padre = Nombre_padre.split(" ")
+
+    print(ape_padre)
+
+
+
     print('Ingrese su Nombre de su Padre:')
-    Nombre_completo_padre = str(input())
+    Nombre_padre = str(input())
 
     print('Ingrese su Nombre de su Madre:')
-    Nombre_completo_madre = str(input())
+    Nombre_madre = str(input())
 
     print('Ingrese su Nombre del hijo:')
     Nombre_hijo = str(input())
+
+    print(Nombre_padre)
+    print(Nombre_madre)
+    print(Nombre_hijo)
     
-    nombrep, apellidop = Nombre_completo_padre.split(",")
-
-    Nombre_completo_padre = nombrep + apellidop
+    separador = " "
+    x,y = Nombre_padre.split(" ")
     
-    nombrem,apellidom = Nombre_completo_madre.split(",")
-
-    print(Nombre_hijo, apellidop, apellidom)
-
-
-
-
+    z,o = Nombre_madre.split(" ")
+   
+    print("el nombre completo del hijo es:", Nombre_hijo, y, o)
 
 
 def ej4():
@@ -178,6 +187,26 @@ def ej4():
   
     Cualquier duda con el método split pueden consultarla por el campus
     '''
+    print('Ingrese Nombre completo persona_1:')
+    Persona_1 = str(input())
+
+    print('Ingrese Nombre completo persona_2:')
+    Persona_2 = str(input())
+
+    print(Persona_1)
+    print(Persona_2)
+    
+    
+    separador = " "
+    x,y = Persona_1.split(" ")
+    print(y)
+
+    z,o = Persona_2.split(" ")
+    print(o)
+
+    es_pariente_de = o in y 
+    
+    print(x, "es pariente de", z, "?", es_pariente_de)
 
 
 def ej5():
@@ -210,6 +239,6 @@ if __name__ == '__main__':
     print("Ejercicios de práctica")
     # ej1()
     # ej2()
-    ej3()
+    # ej3()
     # ej4()
-    # ej5()
+    ej5()
